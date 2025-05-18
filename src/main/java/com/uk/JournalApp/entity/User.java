@@ -26,5 +26,5 @@ public class User {
     private String password;
     @DBRef
     private List<JournalEntry> journalEntries = new ArrayList<>();
-    private LocalDateTime date;
+    private List<String> roles;
 }

@@ -1,0 +1,18 @@
+#
+#spring:
+#  data:
+#    mongodb:
+#      uri: mongodb+srv://urmitkotadiya1011:JMWr2AiugWxJsxI2@cluster0.jgbd4ir.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+#      database: journaldb
+#      auto-index-creation: true
+#
+#server:
+#  port: 8081
+#  servlet:
+#    context-path: /journal
+
+#spring.data.mongodb.username=root
+#spring.data.mongodb.password=root
+
+#Mongodb atlas password = JMWr2AiugWxJsxI2
+#Mongodb atlas username = urmitkotadiya1011
