@@ -1,14 +1,43 @@
 spring:
+  data:
+    redis:
+      host: redis-19190.c301.ap-south-1-1.ec2.redns.redis-cloud.com
+      port: 19190
+      username: default
+      password: 1baX0PhKwfz69pu7Ia98IgrBMT9kMQZW
+      ssl: true
+  #    uri: redis-cli -u redis://default:redis-19190.c301.ap-south-1-1.ec2.redns.redis-cloud.com1baX0PhKwfz69pu7Ia98IgrBMT9kMQZW@:19190
   profiles:
     active: dev
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: urmitkotadiya1011@gmail.com
+    password: omfv hwtq ljnn hqrd
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
 
 logging:
   level:
+    org.springframework.mail: DEBUG
     com:
       uk:
         JournalApp:
           service:
             UserService: DEBUG
+
+weather:
+  api:
+    key: fab538c50ce10a395c83480457deaf3e
+
+weather_api_key : fab538c50ce10a395c83480457deaf3e
+  
 
 #sonarqube token : squ_174e9a410df59a70e1da1398b5e71056a020abda
 # name: journalApp
